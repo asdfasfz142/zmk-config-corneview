@@ -7,19 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-/ {
-    macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LART>
-                , <&macro_tap &kp TAP>
-                , <&macro_release &kp LART>
-                ;
-        };
-    };
-};
+
 / {
         keymap {
                 compatible = "zmk,keymap";

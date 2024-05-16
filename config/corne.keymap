@@ -24,6 +24,20 @@
         keymap {
                 compatible = "zmk,keymap";
 
+/ {
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LART>
+                , <&macro_tap &kp TAP>
+                , <&macro_release &kp LART>
+                ;
+        };
+    };
+};
+
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  ` |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |

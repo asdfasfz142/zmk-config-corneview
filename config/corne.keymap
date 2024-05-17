@@ -34,10 +34,10 @@
 // | LCTRL |     |     |  COPY  |  PASTE  |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB &kp F5 &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp UP &kp LPAR &kp RPAR &kp DEL
-   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &trans &trans   &kp LC(S) &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-   &kp LCTRL  &trans       &trans       &kp LC(C) &kp LC(V)       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4   &kp RALT
+   &kp TAB &kp F5 &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
+   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &trans &trans   &kp LC(S) &kp N4 &kp N5 &kp N6 &trans &trans
+   &kp LCTRL &trans &trans &kp LC(C) &kp LC(V) &trans   &trans &kp N1  &kp N2 &kp N3    &trans &trans
+                                    &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4   &kp N0
                         >;
                 };
 
@@ -48,7 +48,7 @@
 // | SHFT |     |     |     |     |     |   |  _  |  1  |  2  |  3  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | 0 |
                         bindings = <
-   &kp LA(TAB) &kp EXCL &kp AT &kp STAR &kp MINUS &kp UNDER   &kp HASH &kp N7 &kp N8 &kp N9 &kp N0 &kp PSCRN
+   &kp LA(TAB) &kp EXCL &kp AT &kp STAR &kp MINUS &kp UNDER   &kp HASH &kp N7 &kp LPAR &kp RPAR &kp N0 &kp PSCRN
    &kp LCTRL &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)   &kp MINUS &kp N4 &kp N5 &kp N6 &kp BSLH &trans
    &kp LSHFT &trans &trans &trans &trans &trans   &kp UNDER &kp N1 &kp N2 &kp N3 &trans &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT

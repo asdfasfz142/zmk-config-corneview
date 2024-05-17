@@ -30,12 +30,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  F5  |  UP  |  3  |  4  |  5  |   |  LC(F10)  |  7  |  UP  |  (  |  )  | DEL |
-// | BTCLR| LFT | DWN | RGT | BT1 | BT2 |   |  | LFT |  DWN | RGT |     |      |
+// | BTCLR| LFT | DWN | RGT | BT1 | BT2 |   |  | LC(S) |  DWN | RGT |     |      |
 // | SHFT |     |     |  COPY  |  PASTE  |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB &kp F5 &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp UP &kp LPAR &kp RPAR &kp DEL
-   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &bt BT_SEL 1 &bt BT_SEL 2   &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &bt BT_SEL 1 &bt BT_SEL 2   &kp LC(S) &kp LEFT &kp DOWN &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &kp LC(C) &kp LC(V)       &trans         &trans   &trans   &trans &trans    &trans &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;

@@ -29,12 +29,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  TAP  |  UP  |  3  |  4  |  5  |   |  LC(F10)  |  7  |  8  |  9  |  PSCRN  | DEL |
+// |  ESC |  TAB  |  UP  |  3  |  4  |  5  |   |  LC(F10)  |  7  |  8  |  9  |  PSCRN  | DEL |
 // | BTCLR| LFT | DWN | RGT | F | BT2 |   |  | LC(S) |  4  |  5  |  6  |   ;   |
 // | LCTRL |     |     |  COPY  |  PASTE  |     | LC(Q) |   1  |  2   |  3   |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     |  0  |
                         bindings = <
-   &kp ESC &kp TAP &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
+   &kp ESC &kp TAB &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
    &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &kp F &trans   &kp LC(S) &kp N4 &kp N5 &kp N6 &kp SEMI &trans
    &kp LCTRL &trans &trans &kp LC(C) &kp LC(V) &trans   &kp LC(Q) &kp N1  &kp N2 &kp N3    &trans &trans
                                     &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4   &kp N0

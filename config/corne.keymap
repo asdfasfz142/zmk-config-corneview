@@ -19,36 +19,36 @@
 // |  ` |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | cmd1 |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |  ENT   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
-//                    | cmd2 | SPC | WIN |   | CMD2 | SPC  | ALT |
+//                    | cmd2 | SPC | WIN |   | F5 | SPC  | ALT |
                         bindings = <
    &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P &kp BSPC
    &mo 1 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SQT &kp RET
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &mo 2 &kp SPACE &kp LWIN   &mo 2 &kp SPACE &kp RALT
+                  &mo 2 &kp SPACE &kp LWIN   &kp F5 &kp SPACE &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  F5  |  UP  |  3  |  4  |  5  |   |  LC(F10)  |  7  |  UP  |  (  |  )  | DEL |
-// | BTCLR| LFT | DWN | RGT | BT1 | BT2 |   |  | LC(S) |  DWN | RGT |     |      |
-// | LCTRL |     |     |  COPY  |  PASTE  |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  ESC |  TAP  |  UP  |  3  |  4  |  5  |   |  LC(F10)  |  7  |  8  |  9  |  PSCRN  | DEL |
+// | BTCLR| LFT | DWN | RGT | F | BT2 |   |  | LC(S) |  4  |  5  |  6  |   ;   |
+// | LCTRL |     |     |  COPY  |  PASTE  |     | LC(Q) |   1  |  2   |  3   |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     |  0  |
                         bindings = <
-   &kp TAB &kp F5 &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
-   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &trans &trans   &kp LC(S) &kp N4 &kp N5 &kp N6 &trans &trans
-   &kp LCTRL &trans &trans &kp LC(C) &kp LC(V) &trans   &trans &kp N1  &kp N2 &kp N3    &trans &trans
+   &kp ESC &kp TAP &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
+   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &kp F &trans   &kp LC(S) &kp N4 &kp N5 &kp N6 &kp SEMI &trans
+   &kp LCTRL &trans &trans &kp LC(C) &kp LC(V) &trans   &kp LC(Q) &kp N1  &kp N2 &kp N3    &trans &trans
                                     &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4   &kp N0
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ALTAB |  !  |  @  |  *  |  -  |  _  |   |  #  |  7  |  8  |  9  |  0  | PSCRN |
+// | ALTAB |  !  |  @  |  -  |  =  |  *  |   |  #  |  7  |  8  |  9  |  0  | PSCRN |
 // | CTRL |  WIN1  |  WIN2  |  WIN3  |  WIN4  |  WIN5  |   |  -  |  4  |  5  |  6  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  1  |  2  |  3  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | 0 |
                         bindings = <
-   &kp LA(TAB) &kp EXCL &kp AT &kp STAR &kp MINUS &kp UNDER   &kp HASH &kp N7 &kp LPAR &kp RPAR &kp N0 &kp PSCRN
+   &kp LA(TAB) &kp EXCL &kp AT &kp MINUS &kp EQUAL &kp STAR   &kp HASH &kp N7 &kp LPAR &kp RPAR &kp N0 &kp PSCRN
    &kp LCTRL &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)   &kp MINUS &kp N4 &kp N5 &kp N6 &kp BSLH &trans
    &kp LSHFT &trans &trans &trans &trans &trans   &kp UNDER &kp N1 &kp N2 &kp N3 &trans &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
